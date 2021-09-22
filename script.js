@@ -72,17 +72,16 @@ function isValid(bill, person, service){
 
 }
 
-
-
-
-let btn = document.getElementById('btn')
-
-btn.addEventListener('click', (e)=>{
   serviceValue.forEach(selectService => {
     selectService.addEventListener('change', ()=>{
       let h = selectService.value
     })
   })
+
+
+let btn = document.getElementById('btn')
+
+btn.addEventListener('click', (e)=>{
   let v = isValid(totalBill, totalPerson, h)
   console.log(totalBill.value)
   console.log(totalPerson.value)
