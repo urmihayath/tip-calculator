@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="error">
+        <div class="bill-empty"><p>Please enter the billl</p></div>
+        <div class="person-empty"><p>Please enter the number of person</p></div>
+        <div class="service-empty"><p>Please choose service</p></div>
+      </div>
+
+      <div class="box-container">
+        <h1 class="heading">TIP CALCULATOR</h1>
+        <form action="">
+          <div class="box">
+            <label>How much was your bill?</label><br />
+            <input type="number" placeholder="Total Bill" class="total-bill" />
+          </div>
+
+          <div class="box">
+            <label>How many people are sharing the bill?</label> <br />
+
+            <input
+              type="number"
+              placeholder="Total Person to Share"
+              class="person"
+            />
+          </div>
+
+          <div class="box">
+            <label>How was the service??</label> <br />
+            <select>
+            </select>
+          </div>
+
+          <input type="submit" value="Calculate" id="btn" />
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
